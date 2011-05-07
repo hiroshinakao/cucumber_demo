@@ -99,19 +99,17 @@ GEM
     rake (0.8.7)
     ramaze (2011.01.30)
       innate (>= 2010.03)
-    rspec (2.5.0)
-      rspec-core (~> 2.5.0)
-      rspec-expectations (~> 2.5.0)
-      rspec-mocks (~> 2.5.0)
-    rspec-core (2.5.2)
-    rspec-expectations (2.5.0)
+    rspec (2.6.0.rc6)
+      rspec-core (= 2.6.0.rc6)
+      rspec-expectations (= 2.6.0.rc6)
+      rspec-mocks (= 2.6.0.rc6)
+    rspec-core (2.6.0.rc6)
+    rspec-expectations (2.6.0.rc6)
       diff-lcs (~> 1.1.2)
-    rspec-mocks (2.5.0)
-    rspec-rails (2.5.0)
-      actionpack (~> 3.0)
-      activesupport (~> 3.0)
-      railties (~> 3.0)
-      rspec (~> 2.5.0)
+    rspec-mocks (2.6.0.rc6)
+    rspec-rails (2.2.0)
+      rails (~> 3.0.0)
+      rspec (~> 2.2)
     rubyzip (0.9.4)
     selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
@@ -143,6 +141,7 @@ DEPENDENCIES
   launchy
   rails (= 3.0.7)
   ramaze
+  rspec (>= 2.6.0.rc2)
   rspec-rails
   spork
   sqlite3

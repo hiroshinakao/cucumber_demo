@@ -30,6 +30,7 @@ gem 'sqlite3'
 #   gem 'webrat'
 # end
 group :development, :test, :cucumber do
+  gem 'rspec', '>= 2.6.0.rc2'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'database_cleaner'
