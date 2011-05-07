@@ -11,3 +11,13 @@
     かつ "mm2@cucumber.com"と表示されていること
     かつ "Mm2 Cucumber"と表示されていること
     かつ "1"と表示されていること
+
+  シナリオ: ユーザの削除
+    "前提" the following users:
+		  |email  |name|age|
+			|a@a.com|a a |1  |
+			|b@b.com|b b |2  |
+    "もし" I delete the 2nd users
+    "ならば" I should see the following users:
+		  |email  |name|age|
+			|a@a.com|a a |1  |
