@@ -29,3 +29,14 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+group :development, :test, :cucumber do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'spork'
+  gem 'launchy'
+  gem 'ramaze'
+  gem 'webrat'
+end
