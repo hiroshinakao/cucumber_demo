@@ -21,3 +21,18 @@
     ならば 次のユーザが表示されていること:
 		  |Email  |Name|Age|
 			|a@a.com|a a |1  |
+
+  シナリオ: ユーザーの更新
+    前提 次のユーザが登録されている:
+		  |email  |name|age|
+			|a@a.com|a a |1  |
+    かつ "ID:1のユーザ更新"ページを表示している
+    もし "user_email"に"mm2@cucumber.com"と入力する
+    かつ "user_name"に"Mm2 Cucumber"と入力する
+    かつ "user_age"に"2"と入力する
+    かつ "Update"ボタンをクリックする
+    ならば "User was successfully updated."と表示されていること
+    かつ "mm2@cucumber.com"と表示されていること
+    かつ "Mm2 Cucumber"と表示されていること
+    かつ "2"と表示されていること
+   

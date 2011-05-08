@@ -11,11 +11,12 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
-
     when /ユーザ登録/
-      '/users/new'
+      new_user_path
     when /ユーザ一覧/
-      '/users'
+      users_path
+    when /ID:(\d+)のユーザ更新/
+      edit_user_path($1)
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
