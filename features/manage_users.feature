@@ -13,11 +13,11 @@
     かつ "1"と表示されていること
 
   シナリオ: ユーザの削除
-    "前提" the following users:
+    前提 次のユーザが登録されている:
 		  |email  |name|age|
 			|a@a.com|a a |1  |
 			|b@b.com|b b |2  |
-    "もし" I delete the 2nd users
-    "ならば" I should see the following users:
-		  |email  |name|age|
+    もし 2番目のユーザを削除する
+    ならば 次のユーザが表示されていること:
+		  |Email  |Name|Age|
 			|a@a.com|a a |1  |
